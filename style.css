@@ -1,0 +1,114 @@
+body {
+  font-family: Gentium Basic;
+  padding: 2rem;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: Source Sans Pro;
+}
+
+article.poem,
+article.essay {
+  text-align: left;
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0 auto;
+  justify-content: flex-start;
+  width: 100%;
+}
+article.poem h1, article.poem h2, article.poem h3,
+article.essay h1,
+article.essay h2,
+article.essay h3 {
+  text-align: center;
+  width: 100%;
+}
+article.poem p,
+article.poem li,
+article.essay p,
+article.essay li {
+  width: 100%;
+  margin: 0;
+  line-height: 1.62;
+}
+article.poem p:empty,
+article.poem li:empty,
+article.essay p:empty,
+article.essay li:empty {
+  display: none;
+}
+article.poem hr,
+article.essay hr {
+  width: 100%;
+  border: none;
+  border-top: 1px dotted rgba(0, 0, 0, 0.01);
+}
+
+article.essay {
+  max-width: 40rem;
+}
+article.essay p {
+  margin-bottom: 1rem;
+}
+
+article.poem {
+  max-width: 24rem;
+}
+article.poem p {
+  text-indent: -1rem;
+  padding-left: 1rem;
+}
+
+nav {
+  float: left;
+  width: 100%;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+nav ul li {
+  display: block;
+  float: left;
+  border-right: 1px solid #222;
+  padding-right: 0.5rem;
+  margin-right: 0.5rem;
+}
+nav ul li:last-of-type {
+  border-right: 0;
+  margin-right: 0;
+  padding-right: 0;
+}
+
+.blog--index {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding-top: 1rem;
+  clear: both;
+}
+.blog--index h2 {
+  text-align: center;
+}
+.blog--index ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  text-align: center;
+}
+.blog--index ul li {
+  margin-bottom: 0.5rem;
+}
+
+pre.byline {
+  margin: 3rem auto;
+  display: block;
+  width: 12em;
+  font-size: 0.9rem;
+  text-align: center;
+  text-transform: uppercase;
+}
