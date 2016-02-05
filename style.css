@@ -107,6 +107,26 @@ nav ul li:last-of-type {
   margin-bottom: 0.5rem;
 }
 
+.photo--index ul {
+  list-style-type: none;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 0;
+  width: 100%;
+  margin-top: 3rem;
+}
+.photo--index ul li {
+  height: 20vh;
+  flex: 1 1 20vh;
+}
+.photo--index ul li a {
+  height: 100%;
+  width: 100%;
+  display: block;
+  background-size: cover;
+  background-position: center center;
+}
+
 pre.byline {
   margin: 3rem auto;
   display: block;

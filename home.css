@@ -229,14 +229,11 @@ section.experience ul {
   text-align: center;
   margin: 0 -0.5rem;
 }
-
-#skills li {
+#skills ul li {
   padding: 1rem 0.5rem;
-  flex-grow: 1;
-  min-width: 200px;
+  flex: 1 1 13rem;
 }
-
-#skills meter {
+#skills ul meter {
   width: 100%;
   appearance: none;
   -moz-appearance: none;
